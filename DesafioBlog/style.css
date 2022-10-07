@@ -3,18 +3,42 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+}
 
+p {
+    line-height: 1.4;
+}
+
+h2 {
+    margin: 0 85px;
+    color: #290742;
+}
+
+h3 {
+    width: 375px;
+    font-size: 24px;
 }
 
 
-header {
+#container {
+    padding-top: 50px;
+    background-color: #290742;
+    width: 100%;
+    height: 540px;
+    position: absolute;
+    z-index: -1;
+    border-bottom: 3px solid #4fff4b;
+}
+
+
+#container header {
     display: flex;
     color: white;
     justify-content: space-around;
     padding: 0 100px;
 }
 
-input {
+#container input {
     background-color: #170027;
     border: none;
     color: #fbf6ff;
@@ -22,41 +46,36 @@ input {
     border-radius: 5px 0 0 5px;
 }
 
-input::selection {
-    border: none;
-}
 
-h1 {
+#container h1 {
     padding: 50px 0 50px 100px; 
     color: #9e6dc2; 
-    font-size: 35px;
     word-spacing: 5px;
+    font-weight: 900;
+    font-size: 37px;
 }
 
-p {
+.paragrafo1 {
     padding: 0 100px;
     color: #fbf6ff;
 }
 
-ul {
+#container b {
+    padding: 0 100px;
+    color: #9e6dc2;
+    position: relative;
+    top: 50px;
+}
+
+#container ul {
     list-style: none;
     flex-grow: 3;
     text-align: center;
 }
 
-li {
+#container li {
     display: inline;
     padding-right: 50px;
-}
-
-#container {
-    padding-top: 50px;
-    background-color: #290742;
-    width: 100%;
-    height: 600px;
-    position: absolute;
-    z-index: -1;
-    border-bottom: 3px solid #4fff4b;
 }
 
 #lupa {
@@ -81,7 +100,59 @@ li {
     flex-basis: 45%;
 }
 
+#seta {
+    position: relative;
+    top: 56px;
+    right: 100px;
+}
+
 #imagemContainer {
     float: right;
     margin: 50px 85px;
+}
+
+#baixo {
+    display: flex;
+}
+
+#baixo img {
+    margin: 50px 85px 0;
+}
+
+#esquerda .data {
+    margin: 0 85px;
+    padding-top: 20px;
+}
+
+#esquerda p{
+    margin: 20px 85px 0;
+}
+
+#direita .data {
+    margin: 30px 85px 0;
+    padding-top: 20px;
+}
+
+
+#direita p{
+    margin: 20px 85px 0;
+}
+
+#colunas {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#colunas img {
+    margin-right: 27px;
+}
+
+#colunas p{
+    width: 370px;
+    margin-top: 10px;
+}
+
+.data {
+    margin: 7px 0;
 }
